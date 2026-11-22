@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book a Service - AutoCare</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>AutoCare Service</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="booking.html">Book Service</a>
+            <a href="payment.html">Online Payment</a>
+            <a href="about.html">About</a>
+            <a href="admin_login.php">Admin Login</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Book a Vehicle Service</h2>
+        <br>
+        <form id="bookingForm">
+            <div class="form-group">
+                <label>Customer Name:</label>
+                <input type="text" name="customer_name" id="customer_name" required placeholder="e.g., Kamal Perera">
+            </div>
+
+            <div class="form-group">
+                <label>Phone Number:</label>
+                <input type="tel" name="phone" id="phone" required placeholder="0771234567">
+            </div>
+
+            <div class="form-group">
+                <label>Vehicle Number:</label>
+                <input type="text" name="vehicle_number" id="vehicle_number" required placeholder="WP CAB-1234">
+            </div>
+
+            <div class="form-group">
+                <label>Vehicle Type:</label>
+                <select name="car_type" id="vehicle_type" required>
+                    <option value="BMW">BMW</option>
+                    <option value="BENZ">BENZ</option>
+                    <option value="SUV">SUV</option>
+                    
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Service Type:</label>
+                <select name="service_type" id="service_type" required>
+                    <option value="Full Service">Full Service (Rs. 12,500)</option>
+                    <option value="Body Wash & Vacuum">Body Wash &amp; Vacuum (Rs. 2,500)</option>
+                    <option value="Wheel Alignment">Wheel Alignment (Rs. 3,500)</option>
+                    <option value="Engine Tune-up">Engine Tune-up (Rs. 6,000)</option>
+                </select>
+            </div>
+
+            <div class="card-row">
+                <div class="form-group">
+                    <label>Booking Date:</label>
+                    <input type="date" name="booking_date" id="booking_date" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Booking Time:</label>
+                    <input type="time" name="booking_time" id="booking_time" required>
+                </div>
+            </div>
+
+            <button type="submit" class="btn">Submit &amp; Proceed to Payment</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 AutoCare Vehicle Service Center.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
